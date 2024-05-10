@@ -1,0 +1,308 @@
+body,p,span{
+    font-family: "League Spartan", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: "League Spartan", sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/* Begain Custom Style */
+.main-header .btn-primary{
+    background-color: #fff !important;
+    border-color: #fff;
+    color: #2222c8;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+}
+.main-header .btn-primary:hover{
+    border-color: #2222c8;
+    color: #fff;
+}
+
+.main-header .btn-primary::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #2222c8;
+    border-color: #2222c8;
+    border-radius: 25px;
+    z-index: -1;
+    transition: .5s;
+}
+.main-header .btn-primary:hover::after{
+    width: 100%;
+}
+/* Header CSS Start */
+
+
+/* menu */
+.main-header{
+    background: #e7e6e6;
+    
+   
+}
+.main-header img{
+    width: 100px;
+}
+ul.our-primary-menu li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 5px;
+    margin: 0 15px;
+    color: #696868;
+    font-weight: 600;
+    font-size: 18px;
+    transition: .5s;
+    position: relative;
+    
+}
+ul.our-primary-menu li a::before{
+  content: "";
+  position: absolute;
+  top: 64px;
+  left: 0px;
+  height: 3px;
+  width: 0;
+  background: #2222c8;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+
+}
+ul.our-primary-menu li a:hover::before{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+ul.our-primary-menu > li:hover a{
+    transform: scaleX(1.1);
+}
+
+ul.our-primary-menu li .menu-active{
+    color: #2222c8;
+   
+    
+}
+
+/* Header CSS End */
+
+
+/* Slider CSS Start */
+.slider-section{
+    background: #edf6ff;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.right-img{
+
+    border: 1px solid #edf6ff;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -140px;
+    right: -148px;
+    box-sizing: border-box;
+
+}
+.right-img img{
+    width: 970px;
+    height: 940px;
+    
+}
+.slider-content h1{
+    font-size: 45px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.slider-content p{
+    color: #606060;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.slider-content .btn-primary{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 25px !important;
+    transition: .5s;
+}
+
+.slider-content .btn-primary:hover{
+    background: #fff;
+    color: #0c67ec;
+}
+
+/* Slider CSS End */
+
+
+
+
+/****** Service Section CSS Start ******/
+
+
+.service-text h6{
+    color: #2222c8;
+    font-weight: 400;
+}
+.service-text h2{
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.service-text h2 span{
+    border-bottom: 3px solid #2222c8;
+}
+.service-text p{
+    color: #606060;
+    font-size: 18px;
+}
+
+.service-card{
+    margin-top: 50px;
+    transition: .5s;
+}
+.service-card h5{}
+.service-card .card-icon i{
+    background: #5252f0;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 50% 50% 50% 0;
+    display: inline-block;
+    position: relative;
+    transition: .5s;
+
+    
+}
+.service-card .card-icon::before{
+  content: "";
+  position: absolute;
+  top: 165px;
+  left: 23px;
+  height: 3px;
+  width: 33px;
+  background: #2222c8;
+  transition: .5s;
+}
+.service-card:hover .card-icon::before{
+    width: 50px;
+    background: #fff;
+}
+.service-card p{
+    color: #b2b1b1;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: .5s;
+}
+.service-card:hover{
+    background: #2222c8;
+    color: #fff;
+}
+.service-card:hover p{
+    color: #fff;
+}
+.service-card:hover .card-icon i{
+    color: #2222c8;
+    background: #fff;
+}
+
+
+/****** Service Section CSS End ******/
+
+
+/* Expreince Section CSS Start */
+.finix-text{
+    position: relative;
+}
+.play-animation-btn{
+    height: 90px;
+    width: 90px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 90px;
+    background: #fff;
+    color: #e83b3e;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    right: 40%;
+    bottom: 50px;
+}
+
+/* Animation */
+.play-animation-btn::before{
+    content: " ";
+    height: 90px;
+    width: 90px;
+    background: #e83b3e;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: palybtn 1.6s ease-out infinite;
+    
+}
+@keyframes palybtn{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.exprience{
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6) ),url(./video-img-template/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 300px 0;
+}
+.exprence-content{
+    padding-top: 180px;
+    padding-bottom: 380px;
+    color: #fff;
+}   
+.exprence-content h6{
+    font-weight: 500;
+}
+.exprence-content h2{
+    font-weight: 600;
+}
+.exprence-content h3 span{
+    border-bottom: 2px solid #fff;
+}
+.exprence-content p{
+    font-size: 17px;
+}
+
+/* Exprience Section CSS End */
