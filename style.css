@@ -91,10 +91,44 @@ ul.our-primary-menu > li:hover a{
 }
 
 ul.our-primary-menu li .menu-active{
-    color: #2222c8;
-   
-    
+    color: #2222c8;  
 }
+
+/* Dropdown Menu CSS Start */
+ul.our-primary-menu li{
+    position: relative;
+}
+ul.our-primary-menu li ul{
+    position: absolute;
+    width: 210px;
+    left: 0;
+    top: 170%;
+    background: #fff;
+    list-style: none;
+    padding: 31px 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+ul.our-primary-menu li ul li{
+    flex-direction: column;
+}
+ul.our-primary-menu li ul li span{
+    color: #fff !important;
+    background: #000fff;
+    padding: 15px 20px;
+    transition: .5s;
+}
+
+/* Dropdown Hover */
+ul.our-primary-menu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 160%;
+}
+
+/* Dropdown Menu CSS End */
 
 /* Header CSS End */
 
@@ -158,7 +192,11 @@ ul.our-primary-menu li .menu-active{
 
 /****** Service Section CSS Start ******/
 
-
+.service-section{
+    padding-bottom: 100px !important;
+    position: relative;
+    
+}
 .service-text h6{
     color: #2222c8;
     font-weight: 400;
@@ -179,9 +217,18 @@ ul.our-primary-menu li .menu-active{
 
 .service-card{
     margin-top: 50px;
-    transition: .5s;
+    transition: .7s;
+    background-color: #fff;    
 }
-.service-card h5{}
+
+.service-card1-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 417px;
+    left: 260px;    
+    
+}
 .service-card .card-icon i{
     background: #5252f0;
     color: #fff;
@@ -191,9 +238,7 @@ ul.our-primary-menu li .menu-active{
     border-radius: 50% 50% 50% 0;
     display: inline-block;
     position: relative;
-    transition: .5s;
-
-    
+    transition: .5s;   
 }
 .service-card .card-icon::before{
   content: "";
@@ -232,44 +277,66 @@ ul.our-primary-menu li .menu-active{
 
 
 /* Expreince Section CSS Start */
-.finix-text{
+.exprence-content{
     position: relative;
 }
-.play-animation-btn{
+.animation-play-btn{
     height: 90px;
     width: 90px;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     line-height: 90px;
     background: #fff;
-    color: #e83b3e;
+    color: #2222c8;
     display: inline-block;
     border-radius: 50%;
     position: absolute;
-    right: 40%;
-    bottom: 50px;
+    right: 41%;
+    top: 385px;
+    
 }
 
 /* Animation */
-.play-animation-btn::before{
-    content: " ";
+.play-2{
     height: 90px;
     width: 90px;
-    background: #e83b3e;
+    border: 2px solid #fff;
     border-radius: 50%;
     position: absolute;
     left: 0;
     top: 0;
-    animation: palybtn 1.6s ease-out infinite;
-    
+    animation: palybtn 2s ease-out infinite;
+    animation-delay: .2s;     
+}
+.play-3{
+    height: 90px;
+    width: 90px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: palybtn 2s ease-out infinite; 
+    animation-delay: .5s;  
+}
+.play-4{
+    height: 90px;
+    width: 90px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: palybtn 2s ease-out infinite;
+    animation-delay: .8s;     
 }
 @keyframes palybtn{
     0%,30%{
-        transform: scale(0);
+        transform: scale(.8);
         opacity: 1;
     }
 
-    50%{
+    66.66%{
         transform: scale(1.5);
         opacity: .7;
     }
